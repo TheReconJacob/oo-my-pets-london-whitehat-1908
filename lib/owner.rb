@@ -1,11 +1,12 @@
 class Owner
+  # code goes here
   attr_reader :name, :species
 
   @@all = []
 
   def initialize(name)
     @name = name
-    @species = "mammal"
+    @species = "human"
     @@all << self
   end
 
@@ -53,7 +54,7 @@ class Owner
     pets = self.dogs + self.cats
 
     pets.each do |pet|
-      pet.mood = "sad"
+      pet.mood = "nervous"
       pet.owner = nil
     end
   end
